@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/acer/Downloads/kirdar-site%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Murat Güray Kırdar — Professor of Economics, Koç University</title>
+<meta name="description" content="Murat Güray Kırdar is a professor of economics at Koç University, Istanbul. Research in migration, education, demography, and development.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./kirdar_files/css2" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d232a;
+  --ink-soft:#5a636d;
+  --bg:#fdfcfa;
+  --rule:#e3e0da;
+  --link:#134a8e;
+  --link-soft:#d7e2f0;
+  --accent-bg:#f4f2ee;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--serif);font-size:1.04rem;line-height:1.65;
+}
+.wrap{max-width:52rem;margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+a{color:var(--link)}
+a:hover{color:#0d3568}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+/* ------- header & nav ------- */
+.site-head{border-bottom:1px solid var(--rule);background:#fff}
+.site-head .wrap{padding-top:1.6rem;padding-bottom:0}
+.site-title{
+  font-size:clamp(1.5rem,4vw,1.9rem);font-weight:700;letter-spacing:-.01em;
+  margin:0 0 .1rem;
+}
+.site-title a{color:var(--ink);text-decoration:none}
+.site-sub{
+  font-family:var(--sans);font-size:.8rem;color:var(--ink-soft);
+  letter-spacing:.02em;margin:0 0 1.1rem;
+}
+nav.tabs{display:flex;flex-wrap:wrap;gap:0 1.6rem;margin:0 0 -1px}
+nav.tabs a{
+  font-family:var(--sans);font-size:.78rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;text-decoration:none;
+  color:var(--ink-soft);padding:.6rem 0 .7rem;
+  border-bottom:2px solid transparent;
+}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--link)}
+
+/* ------- pages ------- */
+main{padding:2.4rem 0 4rem}
+.page{display:none}
+.page.active{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:0 0 1.4rem;padding-bottom:.5rem;border-bottom:2px solid var(--ink);
+}
+h3.topic{
+  font-size:1.08rem;font-weight:700;font-style:italic;
+  margin:2.4rem 0 .9rem;color:var(--ink);
+}
+h3.topic:first-of-type{margin-top:0}
+
+/* ------- home ------- */
+.home-grid{display:grid;grid-template-columns:15rem 1fr;gap:2.2rem;align-items:start}
+@media(max-width:640px){.home-grid{grid-template-columns:1fr}}
+.portrait{width:100%;border-radius:3px;display:block;border:1px solid var(--rule)}
+.home-text p{margin:0 0 1.05rem}
+.home-text p:first-child{margin-top:-.35rem}
+.contact-block{
+  margin-top:1.8rem;background:var(--accent-bg);border:1px solid var(--rule);
+  border-radius:3px;padding:1.1rem 1.3rem;
+}
+.contact-block h4{
+  font-family:var(--sans);font-size:.72rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 .5rem;
+}
+.contact-block p{margin:0;font-size:.98rem;line-height:1.55}
+
+/* ------- publication lists ------- */
+ul.pubs{list-style:none;margin:0;padding:0}
+ul.pubs li{
+  margin:0 0 1.05rem;padding-left:1.15rem;position:relative;text-wrap:pretty;
+}
+ul.pubs li::before{
+  content:"";position:absolute;left:0;top:.62em;
+  width:.42rem;height:.42rem;background:var(--link-soft);
+  border:1px solid var(--link);border-radius:1px;
+}
+ul.pubs li a{text-decoration:none;border-bottom:1px solid var(--link-soft);font-weight:600}
+ul.pubs li a:hover{border-bottom-color:var(--link)}
+ul.pubs li em{font-style:italic}
+.status{
+  font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.03em;
+  color:#7a5b12;background:#faf3df;border:1px solid #ecdcae;border-radius:3px;
+  padding:.08rem .45rem;white-space:nowrap;
+}
+
+/* ------- vita ------- */
+.vita-lead{margin:0 0 1.4rem}
+.cv-button{
+  display:inline-block;font-family:var(--sans);font-size:.85rem;font-weight:600;
+  letter-spacing:.03em;text-decoration:none;color:#fff;background:var(--link);
+  border-radius:3px;padding:.65rem 1.2rem;
+}
+.cv-button:hover{background:#0d3568;color:#fff}
+dl.vita{margin:2rem 0 0}
+dl.vita dt{
+  font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-soft);margin:1.4rem 0 .4rem;
+}
+dl.vita dd{margin:0 0 .3rem}
+
+/* ------- footer ------- */
+footer{
+  border-top:1px solid var(--rule);
+  font-family:var(--sans);font-size:.75rem;color:var(--ink-soft);
+}
+footer .wrap{padding:1.2rem 0 2.2rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+@media print{
+  nav.tabs,.cv-button{display:none}
+  .page{display:block!important;page-break-after:always}
+  body{font-size:10.5pt}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <h1 class="site-title"><a href="file:///C:/Users/acer/Downloads/kirdar-site%20(1).html#home">Murat Güray Kırdar</a></h1>
+    <p class="site-sub">Professor of Economics · Koç University, Istanbul</p>
+    <nav class="tabs" aria-label="Site">
+      <a href="file:///C:/Users/acer/Downloads/kirdar-site%20(1).html#home" aria-current="page">Home</a>
+      <a href="file:///C:/Users/acer/Downloads/kirdar-site%20(1).html#publications">Publications</a>
+      <a href="file:///C:/Users/acer/Downloads/kirdar-site%20(1).html#working-papers">Working Papers</a>
+      <a href="file:///C:/Users/acer/Downloads/kirdar-site%20(1).html#vita">Vita</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ████████████████ CONTENT START — everything below is yours to edit ████████████████ -->
+
+<!-- ================= HOME ================= -->
+<section class="page active" id="page-home" aria-labelledby="home-h">
+  <div class="home-grid">
+    <div>
+      <!-- YOUR PHOTO: replace the src="..." address below with the filename of a
+           photo saved in the same folder as this file, e.g. src="photo.jpg" -->
+      <img class="portrait" src="./kirdar_files/sgdd-photo-cropped.jpg" alt="Murat Güray Kırdar">
+      <!-- CONTACT DETAILS: edit address and email below. <br> = line break -->
+      <div class="contact-block">
+        <h4>Contact</h4>
+        <p>Koç University<br>
+        College of Administrative Sciences and Economics<br>
+        Rumeli Feneri Yolu, 34450 Sarıyer<br>
+        Istanbul, Turkey<br><br>
+        <a href="mailto:mkirdar@ku.edu.tr">mkirdar@ku.edu.tr</a></p>
+      </div>
+    </div>
+    <div class="home-text">
+      <p>Welcome to my homepage. I am a professor of economics at Koç University, Istanbul. I hold a BA degree from the University of Michigan (1998) and a Ph.D. from the University of Pennsylvania (2004).</p>
+      <p>My research spans the fields of economics, demography, and development. I work primarily in the areas of immigration and education. My latest research focuses on the well-being of Syrian refugees in neighboring countries and their impact on the host population's socioeconomic outcomes. In my earlier research on immigration, I explored the causes of migration decisions and the consequences of migration for both source and host countries. My research on education examines the causal effects of education on various demographic and labor market outcomes. I am also interested in understanding inequalities in educational outcomes across different demographic groups.</p>
+      <p>I have publications in several leading international journals in economics, including <em>International Economic Review</em>, <em>Journal of International Economics</em>, <em>European Economic Review</em>, <em>Journal of Development Economics</em>, <em>Journal of Health Economics</em>, <em>Journal of Human Capital</em>, <em>Labour Economics</em>, <em>World Bank Economic Review</em>, and <em>Oxford Bulletin of Economics and Statistics</em>, as well as in demography and development studies, including <em>Demography</em> and <em>World Development</em>.</p>
+      <p>I have served as an Associate Editor of the <em>European Economic Review</em> since January 2018. My teaching experience includes graduate and undergraduate courses in econometrics, microeconomics, applied econometrics, and labor economics. Additionally, I have supervised several graduate students, including Ph.D. candidates.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section class="page" id="page-publications" aria-labelledby="pub-h">
+  <h2 id="pub-h">Published Papers <span style="font-weight:400;color:var(--ink-soft)">(by topic)</span></h2>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       NEW PAPER TEMPLATE — copy the line below, paste it into any
+       list on this page, then edit authors, title, link, journal:
+
+  <li>A. Author and M. G. Kırdar (2026) “<a href="https://PASTE-LINK-HERE">Paper Title Goes Here</a>,” <em>Journal Name</em> 100, 123–145.</li>
+
+       Papers appear in exactly the order they are listed here.
+       ───────────────────────────────────────────────────────────── -->
+
+  <h3 class="topic">Migration &amp; Refugees</h3>
+  <ul class="pubs">
+    <li>M. B. Gökçe and M. G. Kırdar (2025) “<a href="http://www.sciencedirect.com/science/article/abs/pii/S0305750X2500275X">The Effects of Civil War and Forced Migration on Intimate Partner Violence among Syrian Refugee Women in Jordan</a>,” <em>World Development</em> 196, 107189.</li>
+    <li>A. D. Foster, M. B. Gökçe, and M. G. Kırdar (2024) “<a href="https://read.dukeupress.edu/demography/article/61/5/1427/390824/Intergenerational-Power-Shift-and-the-Rise-of">Intergenerational Power Shift and the Rise of Non-arranged Marriages among Refugees</a>,” <em>Demography</em> 61(5), 1427–1454.</li>
+    <li>M. Demirci, A. D. Foster, and M. G. Kırdar (2024) “<a href="https://www.cambridge.org/core/journals/journal-of-demographic-economics/article/child-growth-and-refugee-status-evidence-from-syrian-migrants-in-turkey/35082BD4B746CC955D6FE9BF700B4691">Child Growth and Refugee Status: Evidence from Syrian Migrants in Turkey</a>,” <em>Journal of Demographic Economics</em> 90(3), 486–520.</li>
+    <li>A. Aygün, M. G. Kırdar, M. Koyuncu, and Q. Stoeffler (2024) “<a href="https://www.sciencedirect.com/science/article/pii/S0304387824000154">Keeping Refugee Children in School and Out of Work: Evidence from the World's Largest Humanitarian Cash Transfer Program</a>,” <em>Journal of Development Economics</em> 168, 103266.</li>
+    <li>M. G. Kırdar, İ. Koç, and M. Dayıoğlu (2023) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537123001239">School Integration of Syrian Refugee Children in Turkey</a>,” <em>Labour Economics</em> 85, 102448.</li>
+    <li>S. Çakır, E. Erbay, and M. G. Kırdar (2023) “<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/726628">Syrian Refugees and Human Capital Accumulation of Working-age Native Children in Turkey</a>,” <em>Journal of Human Capital</em> 17(4), 557–592.</li>
+    <li>M. Dayıoğlu, M. G. Kırdar, and İ. Koç (2023) “<a href="https://doi.org/10.1177/01979183231171551">The Making of a Lost Generation: Child Labor among Syrian Refugees in Turkey</a>,” <em>International Migration Review</em>.</li>
+    <li>Y. E. Akgündüz, Y. K. Bağır, S. M. Cilasun, and M. G. Kırdar (2023) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0304387823000366">Consequences of a Massive Refugee Influx on Firm Performance and Market Structure</a>,” <em>Journal of Development Economics</em> 162, 103081.</li>
+    <li>M. Demirci and M. G. Kırdar (2023) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X2200328X">Labor Market Integration of Syrian Refugees in Turkey</a>,” <em>World Development</em> 162, 106138.</li>
+    <li>E. Aksu, R. Erzan, and M. G. Kırdar (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0927537122000744">The Impact of Mass Migration of Syrians on the Turkish Labor Market</a>,” <em>Labour Economics</em> 76, 102183.</li>
+    <li>D. T. Aracı, M. Demirci, and M. G. Kırdar (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0014292122000666">Development Level of Hosting Areas and the Impact of Refugees on Natives' Labor Market Outcomes in Turkey</a>,” <em>European Economic Review</em> 145, 104132.</li>
+    <li>M. G. Kırdar, I. Lopez Cruz, and B. Türküm (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0167268121004868">The Effect of 3.6 Million Refugees on Crime</a>,” <em>Journal of Economic Behavior and Organization</em> 194, 568–582.</li>
+    <li>A. Aygün, M. G. Kırdar, and B. Tuncay (2021) “<a href="https://www.sciencedirect.com/science/article/pii/S0167629621001193">The Effect of Hosting 3.4 Million Refugees on Native Population Mortality</a>,” <em>Journal of Health Economics</em> 80, 102534.</li>
+    <li>A. Akay, A. Brausmann, S. Djajic, and M. G. Kırdar (2021) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0014292121000350">Purchasing-Power-Parity and the Saving Behavior of Temporary Migrants</a>,” <em>European Economic Review</em> 134, 103682.</li>
+    <li>A. Aydemir and M. G. Kırdar (2017) “<a href="https://www.sciencedirect.com/science/article/pii/S0014292117301307">Quasi-Experimental Impact Estimates of Immigrant Labor Supply Shocks: The Effect of Treatment and Comparison Group Matching and Relative Skill Composition</a>,” <em>European Economic Review</em> 98, 282–315.</li>
+    <li>S. Djajic, M. G. Kırdar, and A. Vinogradova (2016) “<a href="https://www.sciencedirect.com/science/article/pii/S0022199615001750">Source-Country Earnings and Emigration</a>,” <em>Journal of International Economics</em> 99, 46–67.</li>
+    <li>M. G. Kırdar (2013) “<a href="https://izajodm.springeropen.com/articles/10.1186/2193-9039-2-8">Source Country Characteristics and Immigrants' Optimal Migration Duration Decision</a>,” <em>IZA Journal of Migration</em> 2:8.</li>
+    <li>M. G. Kırdar (2012) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-2354.2012.00688.x">Estimating the Impact of Immigrants on the Host Country Social Security System When Return Migration is an Endogenous Choice</a>,” <em>International Economic Review</em> 53(2), 453–486.</li>
+    <li>M. G. Kırdar (2009) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537109000050">Labor Market Outcomes, Savings Accumulation and Return Migration</a>,” <em>Labour Economics</em> 16(4), 418–428.</li>
+    <li>M. G. Kırdar and Ş. Saraçoğlu (2008) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1435-5957.2008.00178.x">Migration and Regional Convergence: An Empirical Investigation for Turkey</a>,” <em>Papers in Regional Science</em> 87(4), 545–567.</li>
+  </ul>
+
+  <h3 class="topic">Education</h3>
+  <ul class="pubs">
+    <li>R. Assaad, A. Aydemir, M. Dayıoğlu, and M. G. Kırdar (2026) “<a href="https://authors.elsevier.com/c/1mWD-~1QCG6UQ">Wage Returns to Human Capital Resulting from an Extra Year of Primary School: Evidence from Egypt</a>,” <em>Economics of Education Review</em> 111, 102760.</li>
+    <li>P. Akyol and M. G. Kırdar (2022) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0014292122001933">Compulsory Schooling Reform and Intimate Partner Violence in Turkey</a>,” <em>European Economic Review</em> 150, 104313.</li>
+    <li>M. Dayıoğlu and M. G. Kırdar (2022) “<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/720008">Keeping Kids in School and Out of Work: Compulsory Schooling and Child Labor in Turkey</a>,” <em>Journal of Human Capital</em> 16(4), 526–555.</li>
+    <li>A. Aydemir, M. G. Kırdar, and H. Torun (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0927537121001330">The Effect of Education on Internal Migration of Young Men and Women: Incidence, Timing, and Type of Migration</a>,” <em>Labour Economics</em> 74, 102098.</li>
+    <li>M. G. Kırdar, M. Dayıoğlu, and İ. Koç (2018) “<a href="https://www.journals.uchicago.edu/doi/pdf/10.1086/700076">The Effects of Compulsory Schooling Laws on Teenage Marriage and Births in Turkey</a>,” <em>Journal of Human Capital</em> 12(4), 640–668.</li>
+    <li>A. Aydemir and M. G. Kırdar (2017) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/obes.12174">Low Wage Returns to Schooling in a Developing Country: Evidence from a Major Policy Reform in Turkey</a>,” <em>Oxford Bulletin of Economics and Statistics</em> 79(6), 1046–1086.</li>
+    <li>M. G. Kırdar, M. Dayıoğlu, and İ. Koç (2016) “<a href="https://academic.oup.com/wber/article-abstract/30/3/549/2449740">Does Longer Compulsory Education Equalize Schooling by Gender and Rural/Urban Residence?</a>” <em>World Bank Economic Review</em> 30(3), 549–579.</li>
+    <li>M. Dayıoğlu, M. G. Kırdar, and A. Tansel (2009) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0084.2008.00540.x">Impact of Sibship Size, Birth Order, and Sex Composition on School Enrollment in Urban Turkey</a>,” <em>Oxford Bulletin of Economics and Statistics</em> 71(3), 399–426.</li>
+    <li>M. G. Kırdar (2009) “<a href="https://www.journals.uchicago.edu/doi/full/10.1086/592841">Explaining Ethnic Disparities in School Enrollment in Turkey</a>,” <em>Economic Development and Cultural Change</em> 57(2), 297–333.</li>
+  </ul>
+
+  <h3 class="topic">Female Labor Force Participation</h3>
+  <ul class="pubs">
+    <li>İ. Tunalı, M. G. Kırdar, and M. Dayıoğlu (2021) “<a href="https://www.sciencedirect.com/science/article/pii/S0305750X21002242">Down and up the “U” — A Synthetic Cohort (Panel) Analysis of Female Labor Force Participation in Turkey, 1988–2013</a>,” <em>World Development</em> 146, 105609.</li>
+  </ul>
+
+  <h3 class="topic">Wages, Income and Consumption</h3>
+  <ul class="pubs">
+    <li>M. G. Kırdar and O. Ekşi (2015) “<a href="http://www.iif.com.tr/index.php/iif/article/view/iif.2015.353.4437">Emek Gelirlerinin ve Eşitsizliğinin Türkiye için bir Analizi: 2002–2011</a>,” <em>İktisat, İşletme ve Finans</em> 30(353), 9–44.</li>
+    <li>S. M. Cilasun and M. G. Kırdar (2015) “Durable and Nondurable Consumption, Health and Education Expenditures over the Life-Cycle in Turkey,” <em>METU Studies in Development</em> 42(2), 247–270.</li>
+    <li>S. M. Cilasun and M. G. Kırdar (2013) “<a href="http://www2.feas.metu.edu.tr/metusd/ojs/index.php/metusd/article/view/706">Household Structure, Household Income and its Components over the Life-cycle in Turkey</a>,” <em>İktisat, İşletme ve Finans</em> 28(328), 89–116.</li>
+    <li>S. M. Cilasun and M. G. Kırdar (2009) “<a href="http://www.iif.com.tr/index.php/iif/article/view/iif.2009.280.2791">Türkiye'deki Hanehalklarının Gelir, Tüketim ve Tasarruf Davranışlarının Yatay Kesitlerle Bir Analizi</a>,” <em>İktisat, İşletme ve Finans</em> 24(280), 9–46.</li>
+  </ul>
+
+  <h3 class="topic">Book Chapters</h3>
+  <ul class="pubs">
+    <li>M. Dayıoğlu and M. G. Kırdar (2022) “İşgücü Piyasasına Erişim: Demografik Gruplar Bazında Bir İnceleme,” in <em>Refah Ekonomisi ve Eşitsizlik</em>. Ed. Ö. F. Çolak and L. A. Özalp (Efil Yayınevi, Ankara), pp. 45–68.</li>
+    <li>A. Aydemir and M. G. Kırdar (2015) “Integration of 1989 Repatriates from Bulgaria to the Turkish Labor Market,” in <em>Waves of Diversity: Socio-Political Implications of International Migration in Turkey</em>. Ed. A. B. Karaçay, D. Ş. Sert, and Z. G. Göker (Isis Yayınevi, Istanbul), pp. 29–55.</li>
+    <li>M. G. Kırdar (2013) “Turkey: Migration and Remittances, 1960s to Present,” in <em>The Encyclopedia of Global Human Migration</em>. Ed. Immanuel Ness. Wiley-Blackwell.</li>
+    <li>M. Dayıoğlu and M. G. Kırdar (2010) “Determinants of and Trends in Labor Force Participation of Women in Turkey,” State Planning Organization of the Republic of Turkey and World Bank, Welfare and Social Policy Analytical Work Program, Working Paper No. 5, Ankara.</li>
+    <li>M. G. Kırdar and Ş. Saraçoğlu (2006) “İç Göç, Bölgesel Yakınsama Sorunu ve Ekonomik Büyüme: Türkiye Örneği,” in <em>Ekonomik Büyümenin Dinamikleri ve İstihdam</em>. Ed. Bilin Neyaptı. Türkiye Ekonomi Kurumu (İmaj Yayınevi, Ankara), pp. 111–132.</li>
+  </ul>
+</section>
+
+<!-- ================= WORKING PAPERS ================= -->
+<section class="page" id="page-working-papers" aria-labelledby="wp-h">
+  <h2 id="wp-h">Working Papers</h2>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       WORKING PAPER TEMPLATE — copy, paste, edit:
+
+  <li>“<a href="https://PASTE-LINK-HERE">Paper Title</a>” (with A. Author and B. Author), IZA Discussion Paper No. 12345, Month Year. <span class="status">Revise &amp; resubmit, Journal Name</span></li>
+
+       The <span class="status">...</span> part is the small yellow
+       badge (e.g. "Conditionally accepted, JEEA"). Delete that span
+       if the paper has no status to report. When a paper is
+       published: delete its line here and add a line to the
+       Publications page instead.
+       ───────────────────────────────────────────────────────────── -->
+
+  <ul class="pubs">
+    <li>“<a href="https://docs.iza.org/dp16770.pdf">Propagation of Immigration Shocks through Firm-to-Firm Trade Linkages</a>” (with Y. E. Akgündüz, A. Aydemir, and S. M. Cilasun), IZA Discussion Paper No. 16770, January 2024. <span class="status">Conditionally accepted, Journal of the European Economic Association</span></li>
+    <li>“<a href="https://www.iza.org/publications/dp/17249/intergenerational-effects-of-compulsory-schooling-reform-on-early-childhood-development-in-a-middle-income-country">Intergenerational Effects of Compulsory Schooling Reform on Early Childhood Development in a Middle-Income Country</a>” (with Y. E. Akgündüz, P. Akyol, A. Aydemir, and M. Demirci), IZA Discussion Paper No. 17249, August 2024. <span class="status">Revise &amp; resubmit, Journal of Human Capital</span></li>
+    <li>“<a href="https://www.iza.org/publications/dp/17871/breaking-barriers-via-refugees-cultural-transmission-and-womens-economic-empowerment">Breaking Barriers via Refugees: Cultural Transmission and Women's Economic Empowerment</a>” (with M. Akbulut-Yüksel, A. Aydemir, and B. Turan), IZA Discussion Paper No. 17871, April 2025. <span class="status">Manuscript under revision</span></li>
+    <li>“<a href="https://docs.iza.org/dp18731.pdf">Cash Transfers, Diet Quality, and Child Growth Among Refugee Children: Evidence from Turkey's ESSN Program</a>” (with M. Demirci and A. D. Foster), IZA Discussion Paper No. 18731, 2026.</li>
+  </ul>
+
+  <h3 class="topic">Work in Progress</h3>
+  <ul class="pubs">
+    <li>“Firm Adjustments to Minimum Wages in a Dual Labor Market: Scale Contraction and Informal Substitution” (with Y. E. Akgündüz, U. Aytun, and S. M. Cilasun).</li>
+    <li>“Refugee Inflows, Within-Firm Reorganization, and Productivity in Turkey's Dual Labor Market” (with O. Akarsu, S. M. Cilasun, and U. Seven).</li>
+  </ul>
+</section>
+
+<!-- ================= VITA ================= -->
+<section class="page" id="page-vita" aria-labelledby="vita-h">
+  <h2 id="vita-h">Vita</h2>
+  <p class="vita-lead">A full curriculum vitae, including grants, professional service, refereeing, and student supervision, is available as a PDF.</p>
+  <!-- CV FILE: put your CV in the same folder as this file, named cv.pdf
+       (or change "cv.pdf" below to match your file's name) -->
+  <p><a class="cv-button" href="file:///C:/Users/acer/Downloads/cv.pdf">Download CV (PDF)</a></p>
+
+  <dl class="vita">
+    <dt>Current position</dt>
+    <dd>Professor of Economics, Koç University, Istanbul</dd>
+
+    <dt>Education</dt>
+    <dd>Ph.D. in Economics, University of Pennsylvania, 2004</dd>
+    <dd>B.A., University of Michigan, 1998</dd>
+
+    <dt>Editorial positions</dt>
+    <dd>Associate Editor, <em>European Economic Review</em>, since January 2018</dd>
+
+    <dt>Affiliations</dt>
+    <dd>Research Fellow, IZA (since 2010)</dd>
+    <dd>External Fellow, CReAM, University College London</dd>
+    <dd>Research Fellow, Economic Research Forum, Cairo</dd>
+
+    <dt>Honors</dt>
+    <dd>BAGEP Young Scientist Award, Science Academy of Türkiye, 2015</dd>
+    <dd>MSCA-IF Global Fellowship, European Commission, 2021–2024</dd>
+  </dl>
+</section>
+
+<!-- ████████████████ CONTENT END — do not edit below this line ████████████████ -->
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Murat Güray Kırdar</span>
+    <span>Department of Economics, Koç University</span>
+  </div>
+</footer>
+
+<script>
+/* Hash-based navigation: each tab has its own URL (#publications etc.),
+   so links to individual pages keep working like on the old multi-page site. */
+const PAGES = ["home","publications","working-papers","vita"];
+const tabs = document.querySelectorAll("nav.tabs a");
+
+function show(page){
+  if(!PAGES.includes(page)) page = "home";
+  document.querySelectorAll(".page").forEach(s=>s.classList.toggle("active", s.id === "page-"+page));
+  tabs.forEach(a=>{
+    const target = a.getAttribute("href").slice(1);
+    if(target === page) a.setAttribute("aria-current","page");
+    else a.removeAttribute("aria-current");
+  });
+  window.scrollTo({top:0});
+}
+window.addEventListener("hashchange",()=>show(location.hash.slice(1)));
+show(location.hash.slice(1) || "home");
+</script>
+
+
+</body></html>
