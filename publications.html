@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- This site is FOUR files: index.html (Home), publications.html,
+     working-papers.html, vita.html. Each is edited the same simple way;
+     see the notes inside each file and the EDITING-GUIDE. -->
+<!-- ═══════════════════════════════════════════════════════════════════
+     HOW TO EDIT  — this site is four files, all edited the same way:
+       index.html (Home) · publications.html · working-papers.html · vita.html
+
+     1. Open the file in any text editor (Notepad, TextEdit, VS Code).
+     2. Your content sits between the CONTENT START and CONTENT END
+        markers below. Ignore the <style> block — that is just design.
+     3. Each publication is ONE line: <li> ... </li>.
+        Add a paper  = copy a line, paste, edit (order on page = order here).
+        Delete a paper = delete its line.
+        Italics: <em>Journal</em>   Link: <a href="https://...">Title</a>
+     4. Save, then upload the file to GitHub (Add file > Upload files);
+        uploading a file with the same name replaces the old one.
+
+     Tip: you can also paste a file into Claude, describe the change in
+     plain English, and ask for the updated file back.
+     ═══════════════════════════════════════════════════════════════ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications — Murat Güray Kırdar</title>
+<meta name="description" content="Murat Güray Kırdar is a professor of economics at Koç University, Istanbul. Research in migration, education, demography, and development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d232a;
+  --ink-soft:#5a636d;
+  --bg:#fdfcfa;
+  --rule:#e3e0da;
+  --link:#134a8e;
+  --link-soft:#d7e2f0;
+  --accent-bg:#f4f2ee;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--serif);font-size:1.04rem;line-height:1.65;
+}
+.wrap{max-width:52rem;margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+a{color:var(--link)}
+a:hover{color:#0d3568}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+/* ------- header & nav ------- */
+.site-head{border-bottom:1px solid var(--rule);background:#fff}
+.site-head .wrap{padding-top:1.6rem;padding-bottom:0}
+.site-title{
+  font-size:clamp(1.5rem,4vw,1.9rem);font-weight:700;letter-spacing:-.01em;
+  margin:0 0 .1rem;
+}
+.site-title a{color:var(--ink);text-decoration:none}
+.site-sub{
+  font-family:var(--sans);font-size:.8rem;color:var(--ink-soft);
+  letter-spacing:.02em;margin:0 0 1.1rem;
+}
+nav.tabs{display:flex;flex-wrap:wrap;gap:0 1.6rem;margin:0 0 -1px}
+nav.tabs a{
+  font-family:var(--sans);font-size:.78rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;text-decoration:none;
+  color:var(--ink-soft);padding:.6rem 0 .7rem;
+  border-bottom:2px solid transparent;
+}
+nav.tabs a:hover{color:var(--ink)}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--link)}
+
+/* ------- pages ------- */
+main{padding:2.4rem 0 4rem}
+.page{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+h2{
+  font-size:1.35rem;font-weight:700;letter-spacing:-.01em;
+  margin:0 0 1.4rem;padding-bottom:.5rem;border-bottom:2px solid var(--ink);
+}
+html{scroll-behavior:smooth}
+.topic-nav{display:flex;flex-wrap:wrap;gap:.45rem;margin:0 0 2rem}
+.topic-nav a{
+  font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.02em;
+  text-decoration:none;color:var(--link);background:var(--accent-bg);
+  border:1px solid var(--rule);border-radius:999px;padding:.4rem .85rem;
+}
+.topic-nav a:hover{border-color:var(--link);background:var(--link-soft);color:#0d3568}
+h3.topic{scroll-margin-top:1.2rem;
+  font-size:1.08rem;font-weight:700;font-style:italic;
+  margin:2.4rem 0 .9rem;color:var(--ink);
+}
+h3.topic:first-of-type{margin-top:0}
+
+/* ------- home ------- */
+.home-grid{display:grid;grid-template-columns:15rem 1fr;gap:2.2rem;align-items:start}
+@media(max-width:640px){.home-grid{grid-template-columns:1fr}}
+.portrait{width:100%;border-radius:3px;display:block;border:1px solid var(--rule)}
+.home-text p{margin:0 0 1.05rem}
+.home-text p:first-child{margin-top:-.35rem}
+.contact-block{
+  margin-top:1.8rem;background:var(--accent-bg);border:1px solid var(--rule);
+  border-radius:3px;padding:1.1rem 1.3rem;
+}
+.contact-block h4{
+  font-family:var(--sans);font-size:.72rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 .5rem;
+}
+.contact-block p{margin:0;font-size:.98rem;line-height:1.55}
+
+/* ------- publication lists ------- */
+ul.pubs{list-style:none;margin:0;padding:0}
+ul.pubs li{
+  margin:0 0 1.05rem;padding-left:1.15rem;position:relative;text-wrap:pretty;
+}
+ul.pubs li::before{
+  content:"";position:absolute;left:0;top:.62em;
+  width:.42rem;height:.42rem;background:var(--link-soft);
+  border:1px solid var(--link);border-radius:1px;
+}
+ul.pubs li a{text-decoration:none;border-bottom:1px solid var(--link-soft);font-weight:600}
+ul.pubs li a:hover{border-bottom-color:var(--link)}
+ul.pubs li em{font-style:italic}
+.status{
+  font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.03em;
+  color:#7a5b12;background:#faf3df;border:1px solid #ecdcae;border-radius:3px;
+  padding:.08rem .45rem;white-space:nowrap;
+}
+
+/* ------- vita ------- */
+.vita-lead{margin:0 0 1.4rem}
+.cv-button{
+  display:inline-block;font-family:var(--sans);font-size:.85rem;font-weight:600;
+  letter-spacing:.03em;text-decoration:none;color:#fff;background:var(--link);
+  border-radius:3px;padding:.65rem 1.2rem;
+}
+.cv-button:hover{background:#0d3568;color:#fff}
+dl.vita{margin:2rem 0 0}
+dl.vita dt{
+  font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-soft);margin:1.4rem 0 .4rem;
+}
+dl.vita dd{margin:0 0 .3rem}
+
+/* ------- footer ------- */
+footer{
+  border-top:1px solid var(--rule);
+  font-family:var(--sans);font-size:.75rem;color:var(--ink-soft);
+}
+footer .wrap{padding:1.2rem 0 2.2rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+@media print{
+  nav.tabs,.cv-button{display:none}
+  .page{display:block!important;page-break-after:always}
+  body{font-size:10.5pt}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <h1 class="site-title"><a href="index.html">Murat Güray Kırdar</a></h1>
+    <p class="site-sub">Professor of Economics · Koç University, Istanbul</p>
+    <nav class="tabs" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+      <a href="working-papers.html">Working Papers</a>
+      <a href="vita.html">Vita</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ████ CONTENT START — everything below is yours to edit ████ -->
+
+<section class="page" id="page-publications" aria-labelledby="pub-h">
+  <h2 id="pub-h">Published Papers <span style="font-weight:400;color:var(--ink-soft)">(by topic)</span></h2>
+
+  <!-- TOPIC JUMP MENU: each link scrolls to the matching heading below.
+       If you add a new topic, give its <h3> an id="..." and add a link here. -->
+  <nav class="topic-nav" aria-label="Topics on this page">
+    <a href="#migration">Migration &amp; Refugees</a>
+    <a href="#education">Education</a>
+    <a href="#female-lfp">Female Labor Force Participation</a>
+    <a href="#wages">Wages, Income and Consumption</a>
+    <a href="#chapters">Book Chapters</a>
+  </nav>
+
+
+  <!-- ─────────────────────────────────────────────────────────────
+       NEW PAPER TEMPLATE — copy the line below, paste it into any
+       list on this page, then edit authors, title, link, journal:
+
+  <li>A. Author and M. G. Kırdar (2026) “<a href="https://PASTE-LINK-HERE">Paper Title Goes Here</a>,” <em>Journal Name</em> 100, 123–145.</li>
+
+       Papers appear in exactly the order they are listed here.
+       ───────────────────────────────────────────────────────────── -->
+
+  <h3 class="topic" id="migration">Migration &amp; Refugees</h3>
+  <ul class="pubs">
+    <li>M. B. Gökçe and M. G. Kırdar (2025) “<a href="http://www.sciencedirect.com/science/article/abs/pii/S0305750X2500275X">The Effects of Civil War and Forced Migration on Intimate Partner Violence among Syrian Refugee Women in Jordan</a>,” <em>World Development</em> 196, 107189.</li>
+    <li>A. D. Foster, M. B. Gökçe, and M. G. Kırdar (2024) “<a href="https://read.dukeupress.edu/demography/article/61/5/1427/390824/Intergenerational-Power-Shift-and-the-Rise-of">Intergenerational Power Shift and the Rise of Non-arranged Marriages among Refugees</a>,” <em>Demography</em> 61(5), 1427–1454.</li>
+    <li>M. Demirci, A. D. Foster, and M. G. Kırdar (2024) “<a href="https://www.cambridge.org/core/journals/journal-of-demographic-economics/article/child-growth-and-refugee-status-evidence-from-syrian-migrants-in-turkey/35082BD4B746CC955D6FE9BF700B4691">Child Growth and Refugee Status: Evidence from Syrian Migrants in Turkey</a>,” <em>Journal of Demographic Economics</em> 90(3), 486–520.</li>
+    <li>A. Aygün, M. G. Kırdar, M. Koyuncu, and Q. Stoeffler (2024) “<a href="https://www.sciencedirect.com/science/article/pii/S0304387824000154">Keeping Refugee Children in School and Out of Work: Evidence from the World's Largest Humanitarian Cash Transfer Program</a>,” <em>Journal of Development Economics</em> 168, 103266.</li>
+    <li>M. G. Kırdar, İ. Koç, and M. Dayıoğlu (2023) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537123001239">School Integration of Syrian Refugee Children in Turkey</a>,” <em>Labour Economics</em> 85, 102448.</li>
+    <li>S. Çakır, E. Erbay, and M. G. Kırdar (2023) “<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/726628">Syrian Refugees and Human Capital Accumulation of Working-age Native Children in Turkey</a>,” <em>Journal of Human Capital</em> 17(4), 557–592.</li>
+    <li>M. Dayıoğlu, M. G. Kırdar, and İ. Koç (2023) “<a href="https://doi.org/10.1177/01979183231171551">The Making of a Lost Generation: Child Labor among Syrian Refugees in Turkey</a>,” <em>International Migration Review</em>.</li>
+    <li>Y. E. Akgündüz, Y. K. Bağır, S. M. Cilasun, and M. G. Kırdar (2023) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0304387823000366">Consequences of a Massive Refugee Influx on Firm Performance and Market Structure</a>,” <em>Journal of Development Economics</em> 162, 103081.</li>
+    <li>M. Demirci and M. G. Kırdar (2023) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0305750X2200328X">Labor Market Integration of Syrian Refugees in Turkey</a>,” <em>World Development</em> 162, 106138.</li>
+    <li>E. Aksu, R. Erzan, and M. G. Kırdar (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0927537122000744">The Impact of Mass Migration of Syrians on the Turkish Labor Market</a>,” <em>Labour Economics</em> 76, 102183.</li>
+    <li>D. T. Aracı, M. Demirci, and M. G. Kırdar (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0014292122000666">Development Level of Hosting Areas and the Impact of Refugees on Natives' Labor Market Outcomes in Turkey</a>,” <em>European Economic Review</em> 145, 104132.</li>
+    <li>M. G. Kırdar, I. Lopez Cruz, and B. Türküm (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0167268121004868">The Effect of 3.6 Million Refugees on Crime</a>,” <em>Journal of Economic Behavior and Organization</em> 194, 568–582.</li>
+    <li>A. Aygün, M. G. Kırdar, and B. Tuncay (2021) “<a href="https://www.sciencedirect.com/science/article/pii/S0167629621001193">The Effect of Hosting 3.4 Million Refugees on Native Population Mortality</a>,” <em>Journal of Health Economics</em> 80, 102534.</li>
+    <li>A. Akay, A. Brausmann, S. Djajic, and M. G. Kırdar (2021) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0014292121000350">Purchasing-Power-Parity and the Saving Behavior of Temporary Migrants</a>,” <em>European Economic Review</em> 134, 103682.</li>
+    <li>A. Aydemir and M. G. Kırdar (2017) “<a href="https://www.sciencedirect.com/science/article/pii/S0014292117301307">Quasi-Experimental Impact Estimates of Immigrant Labor Supply Shocks: The Effect of Treatment and Comparison Group Matching and Relative Skill Composition</a>,” <em>European Economic Review</em> 98, 282–315.</li>
+    <li>S. Djajic, M. G. Kırdar, and A. Vinogradova (2016) “<a href="https://www.sciencedirect.com/science/article/pii/S0022199615001750">Source-Country Earnings and Emigration</a>,” <em>Journal of International Economics</em> 99, 46–67.</li>
+    <li>M. G. Kırdar (2013) “<a href="https://izajodm.springeropen.com/articles/10.1186/2193-9039-2-8">Source Country Characteristics and Immigrants' Optimal Migration Duration Decision</a>,” <em>IZA Journal of Migration</em> 2:8.</li>
+    <li>M. G. Kırdar (2012) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-2354.2012.00688.x">Estimating the Impact of Immigrants on the Host Country Social Security System When Return Migration is an Endogenous Choice</a>,” <em>International Economic Review</em> 53(2), 453–486.</li>
+    <li>M. G. Kırdar (2009) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0927537109000050">Labor Market Outcomes, Savings Accumulation and Return Migration</a>,” <em>Labour Economics</em> 16(4), 418–428.</li>
+    <li>M. G. Kırdar and Ş. Saraçoğlu (2008) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1435-5957.2008.00178.x">Migration and Regional Convergence: An Empirical Investigation for Turkey</a>,” <em>Papers in Regional Science</em> 87(4), 545–567.</li>
+  </ul>
+
+  <h3 class="topic" id="education">Education</h3>
+  <ul class="pubs">
+    <li>R. Assaad, A. Aydemir, M. Dayıoğlu, and M. G. Kırdar (2026) “<a href="https://authors.elsevier.com/c/1mWD-~1QCG6UQ">Wage Returns to Human Capital Resulting from an Extra Year of Primary School: Evidence from Egypt</a>,” <em>Economics of Education Review</em> 111, 102760.</li>
+    <li>P. Akyol and M. G. Kırdar (2022) “<a href="https://www.sciencedirect.com/science/article/abs/pii/S0014292122001933">Compulsory Schooling Reform and Intimate Partner Violence in Turkey</a>,” <em>European Economic Review</em> 150, 104313.</li>
+    <li>M. Dayıoğlu and M. G. Kırdar (2022) “<a href="https://www.journals.uchicago.edu/doi/abs/10.1086/720008">Keeping Kids in School and Out of Work: Compulsory Schooling and Child Labor in Turkey</a>,” <em>Journal of Human Capital</em> 16(4), 526–555.</li>
+    <li>A. Aydemir, M. G. Kırdar, and H. Torun (2022) “<a href="https://www.sciencedirect.com/science/article/pii/S0927537121001330">The Effect of Education on Internal Migration of Young Men and Women: Incidence, Timing, and Type of Migration</a>,” <em>Labour Economics</em> 74, 102098.</li>
+    <li>M. G. Kırdar, M. Dayıoğlu, and İ. Koç (2018) “<a href="https://www.journals.uchicago.edu/doi/pdf/10.1086/700076">The Effects of Compulsory Schooling Laws on Teenage Marriage and Births in Turkey</a>,” <em>Journal of Human Capital</em> 12(4), 640–668.</li>
+    <li>A. Aydemir and M. G. Kırdar (2017) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/obes.12174">Low Wage Returns to Schooling in a Developing Country: Evidence from a Major Policy Reform in Turkey</a>,” <em>Oxford Bulletin of Economics and Statistics</em> 79(6), 1046–1086.</li>
+    <li>M. G. Kırdar, M. Dayıoğlu, and İ. Koç (2016) “<a href="https://academic.oup.com/wber/article-abstract/30/3/549/2449740">Does Longer Compulsory Education Equalize Schooling by Gender and Rural/Urban Residence?</a>” <em>World Bank Economic Review</em> 30(3), 549–579.</li>
+    <li>M. Dayıoğlu, M. G. Kırdar, and A. Tansel (2009) “<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0084.2008.00540.x">Impact of Sibship Size, Birth Order, and Sex Composition on School Enrollment in Urban Turkey</a>,” <em>Oxford Bulletin of Economics and Statistics</em> 71(3), 399–426.</li>
+    <li>M. G. Kırdar (2009) “<a href="https://www.journals.uchicago.edu/doi/full/10.1086/592841">Explaining Ethnic Disparities in School Enrollment in Turkey</a>,” <em>Economic Development and Cultural Change</em> 57(2), 297–333.</li>
+  </ul>
+
+  <h3 class="topic" id="female-lfp">Female Labor Force Participation</h3>
+  <ul class="pubs">
+    <li>İ. Tunalı, M. G. Kırdar, and M. Dayıoğlu (2021) “<a href="https://www.sciencedirect.com/science/article/pii/S0305750X21002242">Down and up the “U” — A Synthetic Cohort (Panel) Analysis of Female Labor Force Participation in Turkey, 1988–2013</a>,” <em>World Development</em> 146, 105609.</li>
+  </ul>
+
+  <h3 class="topic" id="wages">Wages, Income and Consumption</h3>
+  <ul class="pubs">
+    <li>M. G. Kırdar and O. Ekşi (2015) “<a href="http://www.iif.com.tr/index.php/iif/article/view/iif.2015.353.4437">Emek Gelirlerinin ve Eşitsizliğinin Türkiye için bir Analizi: 2002–2011</a>,” <em>İktisat, İşletme ve Finans</em> 30(353), 9–44.</li>
+    <li>S. M. Cilasun and M. G. Kırdar (2015) “Durable and Nondurable Consumption, Health and Education Expenditures over the Life-Cycle in Turkey,” <em>METU Studies in Development</em> 42(2), 247–270.</li>
+    <li>S. M. Cilasun and M. G. Kırdar (2013) “<a href="http://www2.feas.metu.edu.tr/metusd/ojs/index.php/metusd/article/view/706">Household Structure, Household Income and its Components over the Life-cycle in Turkey</a>,” <em>İktisat, İşletme ve Finans</em> 28(328), 89–116.</li>
+    <li>S. M. Cilasun and M. G. Kırdar (2009) “<a href="http://www.iif.com.tr/index.php/iif/article/view/iif.2009.280.2791">Türkiye'deki Hanehalklarının Gelir, Tüketim ve Tasarruf Davranışlarının Yatay Kesitlerle Bir Analizi</a>,” <em>İktisat, İşletme ve Finans</em> 24(280), 9–46.</li>
+  </ul>
+
+  <h3 class="topic" id="chapters">Book Chapters</h3>
+  <ul class="pubs">
+    <li>M. Dayıoğlu and M. G. Kırdar (2022) “İşgücü Piyasasına Erişim: Demografik Gruplar Bazında Bir İnceleme,” in <em>Refah Ekonomisi ve Eşitsizlik</em>. Ed. Ö. F. Çolak and L. A. Özalp (Efil Yayınevi, Ankara), pp. 45–68.</li>
+    <li>A. Aydemir and M. G. Kırdar (2015) “Integration of 1989 Repatriates from Bulgaria to the Turkish Labor Market,” in <em>Waves of Diversity: Socio-Political Implications of International Migration in Turkey</em>. Ed. A. B. Karaçay, D. Ş. Sert, and Z. G. Göker (Isis Yayınevi, Istanbul), pp. 29–55.</li>
+    <li>M. G. Kırdar (2013) “Turkey: Migration and Remittances, 1960s to Present,” in <em>The Encyclopedia of Global Human Migration</em>. Ed. Immanuel Ness. Wiley-Blackwell.</li>
+    <li>M. Dayıoğlu and M. G. Kırdar (2010) “Determinants of and Trends in Labor Force Participation of Women in Turkey,” State Planning Organization of the Republic of Turkey and World Bank, Welfare and Social Policy Analytical Work Program, Working Paper No. 5, Ankara.</li>
+    <li>M. G. Kırdar and Ş. Saraçoğlu (2006) “İç Göç, Bölgesel Yakınsama Sorunu ve Ekonomik Büyüme: Türkiye Örneği,” in <em>Ekonomik Büyümenin Dinamikleri ve İstihdam</em>. Ed. Bilin Neyaptı. Türkiye Ekonomi Kurumu (İmaj Yayınevi, Ankara), pp. 111–132.</li>
+  </ul>
+</section>
+
+<!-- ████ CONTENT END ████ -->
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Murat Güray Kırdar</span>
+    <span>Department of Economics, Koç University</span>
+  </div>
+</footer>
+</body>
+</html>
